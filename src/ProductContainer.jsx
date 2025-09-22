@@ -8,7 +8,7 @@ function ProductContainer() {
 
   const fetchProduct = () => {
     setLoading(true)
-    fetch('https://akestoreapi.com/products')
+    fetch('https://fakestoreapi.com/products')
     .then(response => response.json())
     .then(data => {
       setProducts(data)
@@ -21,7 +21,7 @@ function ProductContainer() {
       setLoading(false)
     })
   }
-
+  
   useEffect( ()=>{
     fetchProduct()
   },[])
